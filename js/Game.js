@@ -337,8 +337,9 @@ class Game {
    
 
     if(player.distance < 32200){
-      if(keyIsDown(38) && player.index !== null ){
+      if((touches.length > 0 || mousePressedOver(moveUp)) && player.index !== null){
           yVel += 0.95;
+          touches = [];
          
           if(keyIsDown(37) || mousePressedOver(moveLeft)){
               xVel -= 0.6;
