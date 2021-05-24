@@ -162,7 +162,7 @@ class Game {
     
     if(allPlayers !== undefined){
       background(rgb(198,135,103));
-      image(track, 0,-displayHeight*37.55,displayWidth, displayHeight*40);
+       image(track, 0,-windowHeight*37.55,windowWidth, windowHeight*40);
       
       //var display_position = 100;
       
@@ -182,7 +182,7 @@ class Game {
         
       //use data form the database to display the cars in y direction
       x = 270 + (index * 200) + allPlayers[plr].positionX;
-      y = displayHeight - allPlayers[plr].distance;
+       y = windowHeight - allPlayers[plr].distance;
         
         cars[index-1].x = x;
         cars[index-1].y = y;
@@ -194,7 +194,7 @@ class Game {
           fill("purple");
           ellipse(x,y,60,60);
           cars[index - 1].shapeColor = "red";
-          camera.position.x = displayWidth/2;
+           camera.position.x = windowWidth/2;
           camera.position.y = cars[index-1].y;
            moveUp.y = camera.y+190
           moveLeft.y = camera.y+243
@@ -208,9 +208,6 @@ class Game {
           bulletRight.x = cars[index-1].x;
           bulletRight.y = cars[index-1].y;*/
          
-          if(keyCode === 32  && player.index !== null ){
-            bulletUp.velocityY = -5;
-          }
 
 
            if( cars[index - 1].isTouching(ob1)){
