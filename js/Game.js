@@ -345,7 +345,7 @@ class Game {
           if(keyIsDown(39) || mousePressedOver(moveRight)){
               xVel += 0.6;
           }
-      }else if(keyIsDown(38) && yVel > 0 && player.index !== null){
+      }else if((touches.length > 0 || mousePressedOver(moveUp)) && yVel > 0 && player.index !== null){
           yVel -= 0.2;
           xVel *= 0.9;
       }else{
