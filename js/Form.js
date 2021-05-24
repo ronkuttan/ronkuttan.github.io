@@ -33,19 +33,19 @@ class Form {
 
   display(){
     this.title.html("RACING POINT..");
-    this.title.position(displayWidth/2 -220,10);
+    this.title.position(windowWidth/2 -220,windowHeight/4-130);
     this.title.style('font-size', '65px');
     this.title.style('color', 'blacl');
 
-    this.input.position(displayWidth/2 - 100 , displayHeight/2 - 80);
+    this.input.position(windowWidth/2 - 100 , windowHeight/2 - 20);
     this.input.style('width', '200px');
     this.input.style('height', '20px');
     this.input.style('background', 'lavender');
-    this.button.position(displayWidth/2-30 , displayHeight/2-20);
+    this.button.position(windowWidth/2-30 , windowHeight/2+50);
     this.button.style('width', '70px');
     this.button.style('height', '30px');
     this.button.style('background', 'yellow');
-    this.reset.position(displayWidth-160,displayHeight-180);
+    this.reset.position(windowWidth-160,windowHeight-50);
     this.reset.style('width', '100px');
     this.reset.style('height', '30px');
     this.reset.style('background', 'lightpink');
