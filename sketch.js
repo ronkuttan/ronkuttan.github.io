@@ -61,7 +61,7 @@ function preload(){
 }
 
 function setup(){
-  canvas = createCanvas(displayWidth - 50, displayHeight-100);
+  canvas = createCanvas(windowWidth,windowHeight);
   //canvas.mousePressed(backSound.play())
   database = firebase.database();
   finishedPlayers = 0;
