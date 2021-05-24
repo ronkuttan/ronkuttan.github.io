@@ -61,7 +61,7 @@ class Form {
       player.update();
       player.updateCount(playerCount);
       this.greeting.html("Hello " + player.name.toUpperCase())
-      this.greeting.position(displayWidth/2 - 150, displayHeight/4);
+      this.greeting.position(windowWidth/2 - 180, windowHeight/4+30);
       this.greeting.style('color', 'white');
       this.greeting.style('font-size', '80px');
     });
