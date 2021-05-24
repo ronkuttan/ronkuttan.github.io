@@ -181,7 +181,7 @@ class Game {
       //x=x+200
         
       //use data form the database to display the cars in y direction
-      x = 270 + (index * 200) + allPlayers[plr].positionX;
+      x = windowWidth/6+ (index * 200) + allPlayers[plr].positionX;
        y = windowHeight - allPlayers[plr].distance;
         
         cars[index-1].x = x;
