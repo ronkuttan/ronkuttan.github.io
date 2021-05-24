@@ -124,7 +124,7 @@ class Game {
     ob14.debug = false;
     ob14.setCollider("rectangle",0,0,160,190)
 
-    moveUp = createSprite(windowWidth/2-620,700,10,10)
+    moveUp = createSprite(windowWidth/2,700,10,10)
     moveUp.addImage("up",moveUp_img)
     moveUp.scale = 0.15
     moveLeft = createSprite(1355,700,10,10)
